@@ -22,6 +22,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.SwingConstants;
+import javax.swing.plaf.ColorUIResource;
 import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicProgressBarUI;
 
@@ -219,12 +220,13 @@ public class MangaProgressBarUi extends BasicProgressBarUI {
                 arcLength);
     }
 
-    private void drawTypePaint(final int width, final int height, final int progress, final Graphics2D graphics2D,
-                               final RoundRectangle2D rectangle) {
+    private void drawTypePaint(final int width, final int height, final int progress, final Graphics2D graphics2D, final RoundRectangle2D rectangle) {
         final Paint paint = graphics2D.getPaint();
         final Shape clip = graphics2D.getClip();
         final boolean movingRight = velocity >= 0;
 
+        //graphics2D.setPaint(theme.get().getPaint(pokemon.getTypes(), colorScheme.get(), 0, height));
+        graphics2D.setPaint(new Color(100, 150, 200));
         graphics2D.setClip(movingRight ? new Rectangle(progress, height)
                 : new Rectangle(progress, 0, progressBar.getWidth(), height));
         graphics2D.fill(rectangle);

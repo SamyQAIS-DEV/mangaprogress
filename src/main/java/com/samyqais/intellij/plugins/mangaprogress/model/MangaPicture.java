@@ -11,9 +11,23 @@ import com.intellij.openapi.util.text.StringUtil;
 
 public enum MangaPicture {
     // Gen I
-    BULBASAUR(1, "bulbasaur", 0, 0, 32),
-    YUGIOH_CARD(2, "yugioh-card", 0, 0, 32),
-    GOGETTA(3, "GogettaKameameaReversed", 0, 0, 32);
+    CELL(1, "cell", 0, 0, 32),
+    CROCODILE(2, "crocodile", 0, 0, 32),
+    DEIDARA(3, "deidara", 0, 0, 32),
+    GOHAN(4, "gohan", 0, 0, 32),
+    GOKU(5, "goku", 0, 0, 32),
+    GOKUSUPER(6, "goku_super", 0, 0, 32),
+    ICHIGOHOLLOW(7, "ichigo_hollow", 0, 0, 32),
+    ITACHI(8, "itachi", 0, 0, 32),
+    KAKASHI(9, "kakashi", 0, 0, 32),
+    LUFFY(10, "luffy_run_render", 0, 0, 32),
+    NARUTO(11, "naruto", 0, 0, 32),
+    PICOLO(12, "picolo", 0, 0, 32),
+    ROCKLEE(13, "rock_lee", 0, 0, 32),
+    SASUKE(14, "sasuke", 0, 0, 32),
+    SATAN(15, "satan", 0, 0, 32),
+    TRUNK(16, "trunk", 0, 0, 32),
+    YUGIOH_CARD(99, "yugioh-card", 0, 0, 32);
 
     public static final Map<String, MangaPicture> DEFAULT_MANGA_PICTURE = Arrays.stream(values())
             .collect(ImmutableMap.toImmutableMap(MangaPicture::getId, Function.identity(), (u, v) -> {

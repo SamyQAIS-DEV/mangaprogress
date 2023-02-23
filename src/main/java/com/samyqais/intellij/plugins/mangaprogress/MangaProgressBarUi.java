@@ -22,7 +22,6 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.SwingConstants;
-import javax.swing.plaf.ColorUIResource;
 import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicProgressBarUI;
 

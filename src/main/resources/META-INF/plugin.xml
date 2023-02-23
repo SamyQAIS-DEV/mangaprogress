@@ -7,7 +7,18 @@
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
-
+    <description><![CDATA[
+        <p>You code as a super saiyan? Would you like to become a leader or a Hokage?
+        We have the solution for you, <b>MangaProgress</b>!
+        If you want to find :</p>
+        <ul>
+        <li>Naruto</li>
+        <li>Dragon Ball</li>
+        <li>One piece</li>
+        <li>others ...</li>
+        <a href="https://example.com">project site</a>.
+        ]]>
+    </description>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService

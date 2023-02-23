@@ -1,33 +1,53 @@
 package com.samyqais.intellij.plugins.mangaprogress.model;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.function.Function;
-
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.intellij.openapi.util.text.StringUtil;
 
 public enum MangaPicture {
-    // Gen I
-    CELL(1, "cell", 0, 0, 32),
-    CROCODILE(2, "crocodile", 0, 0, 32),
-    DEIDARA(3, "deidara", 0, 0, 32),
-    GOHAN(4, "gohan", 0, 0, 32),
-    GOKU(5, "goku", 0, 0, 32),
-    GOKUSUPER(6, "goku_super", 0, 0, 32),
-    ICHIGOHOLLOW(7, "ichigo_hollow", 0, 0, 32),
-    ITACHI(8, "itachi", 0, 0, 32),
-    KAKASHI(9, "kakashi", 0, 0, 32),
-    LUFFY(10, "luffy_run_render", 0, 0, 32),
-    NARUTO(11, "naruto", 0, 0, 32),
-    PICOLO(12, "picolo", 0, 0, 32),
-    ROCKLEE(13, "rock_lee", 0, 0, 32),
-    SASUKE(14, "sasuke", 0, 0, 32),
-    SATAN(15, "satan", 0, 0, 32),
-    TRUNK(16, "trunk", 0, 0, 32),
-    YUGIOH_CARD(99, "yugioh-card", 0, 0, 32);
+    // Naruto
+    NARUTO(1, "naruto", -20, 0, 32),
+    ROCKLEE(2, "rock_lee", -20, 0, 32),
+    SASUKE(3, "sasuke", -20, 0, 32),
+    KYUBI(4, "kyubi", -20, 0, 32),
+    KAKASHI(5, "kakashi", -20, 0, 32),
+    ITACHI(6, "itachi", -20, 0, 32),
+    DEIDARA(7, "deidara", -20, 0, 32),
+
+    //DB
+    GOKU(8, "goku", -20, 0, 32),
+    GOKUSUPER(9, "goku_super", -20, 0, 32),
+    GOHAN(10, "gohan", -20, 0, 32),
+    PICOLO(11, "picolo", -20, 0, 32),
+    TRUNK(12, "trunk", -20, 0, 32),
+    SATAN(13, "satan", -20, 0, 32),
+    CELL(14, "cell", -20, 0, 32),
+
+    // Demon Slayer
+    TANJIRO(15, "tanjiro", -20, 0, 32),
+    NEZUKO(16, "nezuko", -20, 0, 32),
+    INOSUKE(17, "inosuke", -20, 0, 32),
+
+    // One Piece
+    LUFFY(18, "luffy", -20, 0, 32),
+    CROCODILE(19, "crocodile", -20, 0, 32),
+
+    // Bleach
+    ICHIGO(20, "ichigo", -20, 0, 32),
+    ICHIGOHOLLOW(21, "ichigo_h", -20, 0, 32),
+
+    //Autre
+    FMA(22, "fma", -20, 0, 32),
+    SAO(23, "kirito", -20, 0, 32),
+    SAITAMA(24, "saitama", -20, 0, 32),
+    TEMPEST(25, "tempest", -10, 0, 32),
+    YUGIOH(26, "yugioh", -20, 0, 32),
+    GON(27, "gon", -20, 0, 32),
+    KILLUA(28, "killua", -20, 0, 32),
+    ALLEN(29, "allen", -20, 0, 32),
+
+    YUGIOH_CARD(99, "yugioh-card", -20, 0, 32);
 
     public static final Map<String, MangaPicture> DEFAULT_MANGA_PICTURE = Arrays.stream(values())
             .collect(ImmutableMap.toImmutableMap(MangaPicture::getId, Function.identity(), (u, v) -> {

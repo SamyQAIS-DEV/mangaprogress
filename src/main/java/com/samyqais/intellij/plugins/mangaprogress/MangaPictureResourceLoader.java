@@ -27,7 +27,7 @@ public final class MangaPictureResourceLoader {
     }
 
     public static ImageIcon getReversedIcon(final MangaPicture mangaPicture) {
-        return getIconInternal(getIconPath(mangaPicture));
+        return getIconInternal(getReversedIconPath(mangaPicture));
     }
 
     public static String getIconPath(final MangaPicture mangaPicture) {
